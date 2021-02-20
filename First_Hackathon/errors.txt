@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 5: expected '=' not found.
-    image basic_classroom
-                         ^
+File "game/myscreens.rpy", line 6: expected a keyword argument or child statement.
+    $ hasInputted = true
+    ^
+
+File "game/myscreens.rpy", line 14: expected a keyword argument or child statement.
+    $ hasInputted = true
+    ^
+
+File "game/myscreens.rpy", line 22: expected a keyword argument or child statement.
+    $ hasInputted = true
+    ^
 
 Ren'Py Version: Ren'Py 7.4.2.1292
-Sat Feb 20 03:39:41 2021
+Sat Feb 20 15:09:20 2021
