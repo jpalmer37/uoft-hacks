@@ -1,36 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 24, in script
-    define y = Character(player_name)
-  File "game/script.rpy", line 24, in script
-    define y = Character(player_name)
-  File "game/script.rpy", line 24, in <module>
-    define y = Character(player_name)
-NameError: name 'player_name' is not defined
+After initialization, but before game start.
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/bootstrap.py", line 326, in bootstrap
+  File "C:\Users\kevin\Downloads\renpy-7.4.2-sdk/renpy/bootstrap.py", line 326, in bootstrap
     renpy.main.main()
-  File "renpy/main.py", line 515, in main
-    renpy.game.context().run(node)
-  File "game/script.rpy", line 24, in script
-    define y = Character(player_name)
-  File "game/script.rpy", line 24, in script
-    define y = Character(player_name)
-  File "renpy/ast.py", line 2164, in execute
-    self.set()
-  File "renpy/ast.py", line 2175, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "renpy/python.py", line 2242, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 24, in <module>
-    define y = Character(player_name)
-NameError: name 'player_name' is not defined
+  File "C:\Users\kevin\Downloads\renpy-7.4.2-sdk/renpy/main.py", line 567, in main
+    renpy.dump.dump(False)
+  File "C:\Users\kevin\Downloads\renpy-7.4.2-sdk/renpy/dump.py", line 260, in dump
+    os.rename(new, filename)
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process
 
-Windows-10-10.0.18362
+Windows-10-10.0.19041
 Ren'Py 7.4.2.1292
 Your First Hackathon 1.0
-Sat Feb 20 01:19:43 2021
+Sat Feb 20 03:45:42 2021

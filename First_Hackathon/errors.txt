@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/myscreens.rpy", line 10: Line is indented, but the preceding screen statement does not expect a block. Please check this line's indentation.
-    imagebutton:
-    ^
+File "game/script.rpy", line 5: expected '=' not found.
+    image basic_classroom
+                         ^
 
 Ren'Py Version: Ren'Py 7.4.2.1292
-Sat Feb 20 02:31:01 2021
+Sat Feb 20 03:39:41 2021
