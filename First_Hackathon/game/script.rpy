@@ -5,7 +5,7 @@
 image basic classroom=im.Scale("basic_classroom.png",1920,1080)
 define v = Character("Victor", color='#065535')
 define scale = 1.5
-define hasInputted = False
+
 image Victor Angry = im.FactorScale("Victor_Angry.png",scale)
 image Victor Chilling = im.FactorScale("Victor_Chilling.png",scale)
 image Victor Frustrated = im.FactorScale("Victor_Frustratedpng.png",scale)
@@ -92,19 +92,18 @@ label start:
     j "Now take a look at this!"
     you "Wow, that's so cool!"
     hide Jenny Smiling
-
-    "*You roll your eyes*"
-    while not(hasInputted):
+    while True:
         show screen goangie
         show screen govictor
         show screen gojenny
         "You should talk to one of your teammates and get to know them better! Click the teammate you would like to talk to."
 
 
+
     # This ends the game.
 label end:
-    show Angie Smile at left
     show Jenny Smiling
+    show Angie Smile at left
     show Victor Smiling at right
-    "Placeholder text"
+    "Placeholder"
     return

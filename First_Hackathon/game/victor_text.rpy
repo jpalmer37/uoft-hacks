@@ -1,10 +1,3 @@
-image Victor Angry = im.FactorScale("Victor_Angry.png",scale)
-image Victor Chilling = im.FactorScale("Victor_Chilling.png",scale)
-image Victor Frustrated = im.FactorScale("Victor_Frustratedpng.png",scale)
-image Victor Serious = im.FactorScale("Victor_Serious.png",scale)
-image Victor Smiling = im.FactorScale("Victor_Smiling.png",scale)
-image Victor Suprised = im.FactorScale("Victor_Suprised.png",scale)
-image Victor Very Angry = im.FactorScale("Victor_VeryAngry.png",scale)
 
 label victor_text:
     show Victor Serious

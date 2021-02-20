@@ -1,3 +1,4 @@
+
 label jenny_text:
     scene basic_classroom
     hide screen goangie
