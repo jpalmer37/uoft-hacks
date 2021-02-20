@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While parsing C:\Users\Hammad\Documents\GitHub\uoft-hacks\First_Hackathon/game/options.rpy.
+  File "game/options.rpy", line 15, in <module>
+    define config.name = _("Your First Hackathon", color="#009933")
+TypeError: _() got an unexpected keyword argument 'color'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/bootstrap.py", line 326, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 447, in main
+    renpy.game.script.load_script() # sets renpy.game.script.
+  File "renpy/script.py", line 283, in load_script
+    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
+  File "renpy/script.py", line 779, in load_appropriate_file
+    self.finish_load(stmts, initcode, filename=lastfn)
+  File "renpy/script.py", line 480, in finish_load
+    node.early_execute()
+  File "renpy/ast.py", line 2146, in early_execute
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "renpy/python.py", line 2242, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/options.rpy", line 15, in <module>
+    define config.name = _("Your First Hackathon", color="#009933")
+TypeError: _() got an unexpected keyword argument 'color'
+
+Windows-10-10.0.18362
+Ren'Py 7.4.2.1292
+ 
+Fri Feb 19 23:32:40 2021
