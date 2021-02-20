@@ -49,7 +49,7 @@ image Angie Whatever = im.FactorScale("Angie_Whatever.png",scale)
 
 label start:
 
-    "I've been thinking about changing my name."
+    #"I've been thinking about changing my name."
 
 
     # Show a background. This uses a placeholder by default, but you can
@@ -72,31 +72,32 @@ label start:
 
     # These display lines of dialogue.
 
-    "*You nervously look around the room, while whipping your sweaty palms on your jeans*"
+    "*You nervously look around the room, while wiping your sweaty palms on your jeans*"
     "*You walk over to the table which you think is your group is seated at*"
     you "Hey guys is this Group 7?"
     show Angie Smile
-    a "Yup, nice to meet you i'm Angie!"
+    a "Yup, nice to meet you I'm Angie!"
     hide Angie Smile
     show Victor Chilling
-    v "*Grunts and pushes glasses up*"
+    v "Oh hey."
     hide Victor Chilling
-    show Jenny Yelling
+    show Jenny Smiling
     j "Hey! Hey! I'm Jenny!"
-    j "*Smirks* Wanna see something cool hacker stuff!"
-    j "*Proceeds to type tree in command prompt while giggling*"
-    hide Jenny Yelling
+    hide Jenny Smiling
+    show Jenny Neutral
+    j "Wanna see something cool hacker stuff?"
+    j "*types 'tree' on terminal*"
+    hide Jenny Neutral
     show Jenny Smiling
     j "Now take a look at this!"
     you "Wow, that's so cool!"
     hide Jenny Smiling
-    "*You roll your eyes*"
     show screen goangie
     show screen govictor
     show screen gojenny
     "You should talk to one of your teammates and get to know them better! Click the teammate you would like to talk to."
 
-
+    
 
     # This ends the game.
 
