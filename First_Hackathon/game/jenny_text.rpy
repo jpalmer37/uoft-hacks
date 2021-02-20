@@ -55,4 +55,5 @@ label jenny_text:
     j " git…? Hub…?"
     you "{i}Oh man{\i}"
     you "{i}I guess we have alot to learn together :){\i}"
-    jump end
+    hide Jenny confused
+    jump choice_screen

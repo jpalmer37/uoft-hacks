@@ -1,20 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-WindowsError: [Error 32] The process cannot access the file because it is being used by another process
+While running game code:
+  File "game/victor_text.rpy", line 64, in script
+    show Victor Thinking
+Exception: Sayer 'You' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\kevin\Downloads\renpy-7.4.2-sdk/renpy/bootstrap.py", line 326, in bootstrap
-    renpy.main.main()
-  File "C:\Users\kevin\Downloads\renpy-7.4.2-sdk/renpy/main.py", line 567, in main
-    renpy.dump.dump(False)
-  File "C:\Users\kevin\Downloads\renpy-7.4.2-sdk/renpy/dump.py", line 260, in dump
-    os.rename(new, filename)
-WindowsError: [Error 32] The process cannot access the file because it is being used by another process
+  File "game/victor_text.rpy", line 64, in script
+    show Victor Thinking
+  File "renpy/ast.py", line 680, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "renpy/ast.py", line 574, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'You' is not defined.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.2.1292
 Your First Hackathon 1.0
-Sat Feb 20 15:12:21 2021
+Sat Feb 20 18:49:30 2021
