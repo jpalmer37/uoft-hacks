@@ -15,7 +15,7 @@ label victor_text:
     show Victor Frustrated
     v " Why does it matter to you?"
     you "..."
-    you "Um I’m ___."
+    you "Um I’m [you]."
     show Victor Serious
     v   "Victor"
     you "What’s this guy’s deal?"
