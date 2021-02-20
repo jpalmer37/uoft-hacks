@@ -1,13 +1,13 @@
 screen goangie():
     imagebutton:
-        xalign 0.2
+        xalign 0.1
         yalign 0.5
         idle ("Angie Smile")
         action Jump("angie_text")
 
 screen govictor():
     imagebutton:
-        xalign 0.8
+        xalign 0.9
         yalign 0.5
         idle ("Victor Serious")
         action Jump("victor_text")

@@ -3,16 +3,17 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 image basic classroom=im.Scale("basic_classroom.png",1920,1080)
-define v = Character("Victor", color='#065535')
+define v = Character("Victor", color='#FFA500')
 define scale = 1.5
 
-image Victor Angry = im.FactorScale("Victor_Angry.png",scale)
+image Victor Thinking = im.FactorScale("Victor_Thinking.png",scale)
+image Victor Thinking2 = im.FactorScale("Victor_Thinking2.png",scale)
 image Victor Chilling = im.FactorScale("Victor_Chilling.png",scale)
-image Victor Frustrated = im.FactorScale("Victor_Frustratedpng.png",scale)
+image Victor Frustrated = im.FactorScale("Victor_Frustrated.png",scale)
 image Victor Serious = im.FactorScale("Victor_Serious.png",scale)
 image Victor Smiling = im.FactorScale("Victor_Smiling.png",scale)
 image Victor Suprised = im.FactorScale("Victor_Suprised.png",scale)
-image Victor Very Angry = im.FactorScale("Victor_VeryAngry.png",scale)
+image Victor Talking = im.FactorScale("Victor_Talking.png",scale)
 
 define j = Character("Jenny", color='#6da7e8')
 
@@ -79,7 +80,7 @@ label start:
     a "Yup, nice to meet you I'm Angie!"
     hide Angie Smile
     show Victor Chilling
-    v "Oh hey."
+    v "Hey."
     hide Victor Chilling
     show Jenny Smiling
     j "Hey! Hey! I'm Jenny!"
@@ -92,6 +93,10 @@ label start:
     j "Now take a look at this!"
     you "Wow, that's so cool!"
     hide Jenny Smiling
+
+    jump choice_screen
+
+label choice_screen:
     while True:
         show screen goangie
         show screen govictor
@@ -104,6 +109,6 @@ label start:
 label end:
     show Jenny Smiling
     show Angie Smile at left
-    show Victor Smiling at right
+    show Victor Serious at right
     "Placeholder"
     return
