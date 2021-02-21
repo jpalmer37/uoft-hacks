@@ -14,7 +14,7 @@
 
 define config.name = _("Your First Hackathon")
 # changing the color of the title
-define gui.accent_color = "#009933"
+define gui.accent_color = "#3366cc"
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -25,8 +25,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
-
+define config.version = ""
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.

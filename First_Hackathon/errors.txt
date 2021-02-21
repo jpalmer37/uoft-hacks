@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/victor_text.rpy", line 23: expected statement.
-    you: "{i}...What even is front-end again? Oh man, I’m so lost{\i}"
-       ^
+File "game/script.rpy", line 114: invalid syntax
+        jump conclusion
+                       ^
+    
 
 Ren'Py Version: Ren'Py 7.4.2.1292
-Sat Feb 20 18:47:35 2021
+Sat Feb 20 19:44:40 2021

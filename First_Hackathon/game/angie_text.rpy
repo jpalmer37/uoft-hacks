@@ -1,19 +1,19 @@
 image github = im.FactorScale("hello-world2.png",0.7)
 
 label angie_text:
+    scene angie room
     hide screen goangie
     hide screen govictor
     hide screen gojenny
-    scene basic_classroom
     show Angie Smile
     a "Hey! How’s it going?"
     you "Hey Angie! Its going okay! Did you guys already start coding?"
     show Angie Happy
     a "Way too early for that haha! Sit back and relax! We’re just sharing some of our past projects."
     you "Right… past projects..."
-    show github at left
+    # show github at left
     you "{i}*sweating* Oh crap, I don’t have a single project…{\i}"
-    hide github at left
+    # hide github at left
     show Angie Motivated
     a "Wanna take a look at one of mine? Here’s one I did last weekend! Nothing too fancy."
     a "It's a gradient-boosted machine learning model to predict whether a tumor is cancerous or not!"
@@ -52,4 +52,6 @@ label angie_text:
     you "Wow, thank you so much! Let's get started then!"
     you "{i}Who knew that connecting with others could make this experience so much better”{\i}"
     hide Angie Motivated
-    jump choice_screen
+    python:
+        angieflag = True
+    jump choicescreen

@@ -1,5 +1,6 @@
 
 label victor_text:
+    scene victor room
     show Victor Serious
     hide screen goangie
     hide screen govictor
@@ -19,7 +20,7 @@ label victor_text:
     hide Victor Chilling
     show Victor Serious
     v "you’ve seen our project plan, right? I work best alone, so just focus on the front-end classes and I’ll take care of the rest. "
-    
+
     you "{i}...What even is front-end again? Oh man, I’m so lost{\i}"
     you "Um, would you mind helping me understand inheritance? I know we’re using Java and I’m pretty new to object-oriented programming."
     hide Victor Serious
@@ -70,7 +71,7 @@ label victor_text:
     you "Really?? I love Pokemon!"
     hide Victor Smiling
     show Victor Suprised
-    v "Whoa, no way!" 
+    v "Whoa, no way!"
     hide Victor Suprised
     show Victor Smiling
     you "... favorite game? … favourite Pokemon? … how old were you? … other favourite games?..."
@@ -79,7 +80,9 @@ label victor_text:
     hide Victor Smiling
     show Victor Talking
     v "Agreed! Here, I’ll explain inheritance using Pokemon as an example. If we design a class for one Pokemon … "
-    you "{i}Wow, Victor was cold at first, but turned into a great colleague.{\i}" 
+    you "{i}Wow, Victor was cold at first, but turned into a great colleague.{\i}"
     you "{i}Even when connecting feels difficult at first, it can be worthwhile to remain persistent and keep trying. Great things can come from it.{\i}"
     hide Victor Talking
-    jump choice_screen
+    python:
+        victorflag = True
+    jump choicescreen

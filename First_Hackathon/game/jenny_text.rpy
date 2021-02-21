@@ -1,6 +1,6 @@
 
 label jenny_text:
-    scene basic_classroom
+    scene jenny room
     hide screen goangie
     hide screen govictor
     hide screen gojenny
@@ -56,4 +56,6 @@ label jenny_text:
     you "{i}Oh man{\i}"
     you "{i}I guess we have alot to learn together :){\i}"
     hide Jenny confused
-    jump choice_screen
+    python:
+        jennyflag = True
+    jump choicescreen

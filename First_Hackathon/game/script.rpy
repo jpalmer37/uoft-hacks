@@ -3,17 +3,19 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 image basic classroom=im.Scale("basic_classroom.png",1920,1080)
-define v = Character("Victor", color='#FFA500')
+image angie room=im.Scale("angie_scene.jpg",1920,1080)
+image jenny room="jenny_scene.jpg"
+image victor room="victor_scene.png"
+define v = Character("Victor", color='#065535')
 define scale = 1.5
 
-image Victor Thinking = im.FactorScale("Victor_Thinking.png",scale)
-image Victor Thinking2 = im.FactorScale("Victor_Thinking2.png",scale)
+image Victor Angry = im.FactorScale("Victor_Angry.png",scale)
 image Victor Chilling = im.FactorScale("Victor_Chilling.png",scale)
-image Victor Frustrated = im.FactorScale("Victor_Frustrated.png",scale)
+image Victor Frustrated = im.FactorScale("Victor_Frustratedpng.png",scale)
 image Victor Serious = im.FactorScale("Victor_Serious.png",scale)
 image Victor Smiling = im.FactorScale("Victor_Smiling.png",scale)
 image Victor Suprised = im.FactorScale("Victor_Suprised.png",scale)
-image Victor Talking = im.FactorScale("Victor_Talking.png",scale)
+image Victor Very Angry = im.FactorScale("Victor_VeryAngry.png",scale)
 
 define j = Character("Jenny", color='#6da7e8')
 
@@ -80,7 +82,7 @@ label start:
     a "Yup, nice to meet you I'm Angie!"
     hide Angie Smile
     show Victor Chilling
-    v "Hey."
+    v "Oh hey."
     hide Victor Chilling
     show Jenny Smiling
     j "Hey! Hey! I'm Jenny!"
@@ -93,10 +95,11 @@ label start:
     j "Now take a look at this!"
     you "Wow, that's so cool!"
     hide Jenny Smiling
-
-    jump choice_screen
-
-label choice_screen:
+    # These are the flags indicating who has been interacted with
+    python:
+        jennyflag = False
+        victorflag = False
+        angieflag = False
     while True:
         show screen goangie
         show screen govictor
@@ -104,11 +107,30 @@ label choice_screen:
         "You should talk to one of your teammates and get to know them better! Click the teammate you would like to talk to."
 
 
+label choicescreen:
+    while True:
+        # If user has done every scene
+        if jennyflag == True and victorflag == True and angieflag == True:
+            jump conclusion
+        if not jennyflag:
+            show screen gojenny
+        if not angieflag:
+            show screen goangie
+        if not victorflag:
+            show screen govictor
+        "You should talk to one of your teammates and get to know them better! Click the teammate you would like to talk to."
 
-    # This ends the game.
-label end:
+
+label conclusion:
     show Jenny Smiling
     show Angie Smile at left
-    show Victor Serious at right
-    "Placeholder"
+    show Victor Smiling at right
+    "As you can see, it doesn’t matter how skilled you are or how talented you are at the end of the day we are here to learn."
+    "We all come together from all walks of life and learn from each other's successes and failures."
+    "So next time you're at a hackathon remember you may encounter people like Angie, Jenny, and Victor."
+    "They all might be different skill levels but that shouldn't impact you in how you feel about your own ability and self worth."
+    "You are amazing and worth it! Thank you for taking time out of your day to play our little game!"
+    "This game was made by John, Hammad, and Kevin for UofTHacks VIII with an emphasis on TELUS’S challenge of managing and improving mental health."
+
+
     return
