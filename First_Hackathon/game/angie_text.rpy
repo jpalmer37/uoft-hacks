@@ -5,14 +5,14 @@ label angie_text:
     hide screen goangie
     hide screen govictor
     hide screen gojenny
-    show Angie Smile
+    show Angie Smile with moveinright
     a "Hey! How’s it going?"
     you "Hey Angie! Its going okay! Did you guys already start coding?"
     show Angie Happy
     a "Way too early for that haha! Sit back and relax! We’re just sharing some of our past projects."
     you "Right… past projects..."
     # show github at left
-    you "{i}*sweating* Oh crap, I don’t have a single project…{\i}"
+    you "{i}*sweating* Oh crap, my only project is a tiny web scraper…{\i}"
     # hide github at left
     show Angie Motivated
     a "Wanna take a look at one of mine? Here’s one I did last weekend! Nothing too fancy."
@@ -29,12 +29,12 @@ label angie_text:
     you "…umm"
     show Angie Happy
     a "Anyways, specifics don’t matter! Show me a project of yours! Anything!"
-    you "{i}Oh man, don’t look like a fool, say something!{\i}"
+    you "{i}Oh man, don’t look like a fool, say something!!{\i}"
     you "Ahhh, wish I could, but I think my GitHub account got deactivated or something"
     show Angie Confused
     a "Really? Hmm, I’ve never heard anything like that happen before"
     you "{i}Ugh, who am I kidding with that line{\i}"
-    you "Okay wait, I’m sorry. Full honesty, I have no past projects. This is my first hackathon."
+    you "Okay wait, sorry. In full honesty, my only project is a small web scraper. This is my first hackathon."
     show Angie Motivated
     a "Whoa!! No way! Your first one?? That’s awesome!"
     you "{i}Wait, what?? Awesome?{\i}"
@@ -50,7 +50,8 @@ label angie_text:
     a "Hey none of that!! You’re doing FINE!"
     a "Others helped me when I was starting, so why can’t I help you?"
     you "Wow, thank you so much! Let's get started then!"
-    you "{i}Who knew that connecting with others could make this experience so much better”{\i}"
+    you "{i}Angie was so warm and welcoming even though I was inexperienced.{\i}" 
+    you "{i}Connecting with her showed me that people can look past your skills and experience, and appreciate you as a team member.{\i}"
     hide Angie Motivated
     python:
         angieflag = True

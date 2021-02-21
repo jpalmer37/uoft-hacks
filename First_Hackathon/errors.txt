@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 114: invalid syntax
-        jump conclusion
-                       ^
-    
+File "game/jenny_text.rpy", line 22: expected statement.
+    you: "Oh nothing special, it’s just a program that grabs data from websites haha."
+       ^
 
 Ren'Py Version: Ren'Py 7.4.2.1292
-Sat Feb 20 19:44:40 2021
+Sat Feb 20 21:17:04 2021

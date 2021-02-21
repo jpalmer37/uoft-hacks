@@ -5,57 +5,77 @@ label jenny_text:
     hide screen govictor
     hide screen gojenny
     show Jenny Smiling with moveinright
-    j " Hey! Hey! Hey! So what cool coding tricks do you know!"
-    you "Well I am kinda new to do this so I don’t know much…"
-    show Jenny Yelling
-    j " COME ON!!!!!! Don’t be shy, I just showed you one of my greatest tricks."
-    you "{i}One of her greatest ‘tricks’???{\i}"
-    you "Well I have worked on a couple of small projects like a web scraper and snake."
-    show Jenny confused
-    pause(0.7)
-    show Jenny Yelling
-    j " You made a SNAKE?!?!?!?!? "
-    j " HOW’D YOU MAKE A SNAKE WITH A COMPUTER?!?!?"
-    you "{i}Holy moly, she definitely has no idea what’s going on here.{\i}"
-    you "Oh no, I mean the game, not the actual reptile."
+    j "Hey! Wanna see some cool hacker stuff?"
+    "*types ‘tree’ in terminal while giggling*"
+    hide Jenny Smiling
     show Jenny Sweating
-    j " Oh wow that’s so cool I haven’t made anything yet. (sad)"
-    you "Oh, so what are you doing at a hackathon aren’t you scared what people will say, I mean your skill level is so much lower than everyone else here."
-    show Jenny Blushing Crying
-    j " Well well aren’t you a meanie!"
-    you "no no! That’s not what I meant, I mean…"
-    you "I was scared that I would be not skilled enough to be a team player, I thought I wasn’t good enough and it made me feel like not showing up at all."
-    show Jenny Sad Cry
-    j " Well well well you aren’t a meanie…."
+    j "Isn’t that awesome?"
+    hide Jenny Sweating
     show Jenny Smiling
-    j "YOU’RE JUST A SCAREDY CAT hehehe"
-    you "I am not!"
-    show Jenny Little Smile
-    j " Look silly, it’s ok to be not as experienced as others but that doesn’t mean you’re less than others or not as competent!"
-    you "But I feel like you will just be a burden….."
+    you "Wow, that’s so cool Jenny! *rolls eyes slightly*"
+    j "Haha thanks!"
+    hide Jenny Smiling
     show Jenny Yelling
-    j " Who cares!! You’re here to give it you’re all and try your best, if your best is not good enough who cares!"
-    j " You’re here to grow your skill set and meet new people!"
-    you "I mean you are right but I don’t wanna be the one person that holds my team back."
-    show Jenny Little Smile
-    j " Oh stop, not one expects you to be amazing or anything now you’re just sounding like a cry baby."
-    you "I guess you’re right, I shouldn’t feel like im less competent then others, I mean my competence and how adept I am when it comes with programing doesn’t matter as we are all here to learn and better ourselves."
+    j "So what cool coding tricks do you know!"
+    hide Jenny Yelling
     show Jenny Smiling
-    j " Haha I didn’t understand any of those big words that you just said but sure!!!"
-    you "{i}she really is clueless and I guess I kinda cute *blushes*{\i}"
-    show Jenny Little Smile
-    pause(0.7)
-    show Jenny Blushing
-    j " What are you looking at dumbo."
-    you "uh nothing haha"
+    you "Umm honestly ... I don’t really know many tricks."
+    hide Jenny Smiling
     show Jenny Yelling
-    j " So you gonna show me that web rapper? Web strapper?"
-    you "Web Scrapper and yea ill show you, it’s on my github!"
+    j "Aw, come on!!! Don’t be shy, I just showed you one of my greatest tricks!"
+    hide Jenny Yelling
+    show Jenny Neutral
+    you "{i}One of her 'greatest tricks’??? Okay then...{\i}"
+    you "Well, I have one mini project where I built a web scraper"
+    hide Jenny Neutral
     show Jenny confused
-    j " git…? Hub…?"
-    you "{i}Oh man{\i}"
-    you "{i}I guess we have alot to learn together :){\i}"
+    j "Whoa, what’s that??"
     hide Jenny confused
+    show Jenny Neutral
+    you "Oh nothing special, it’s just a program that grabs data from websites haha."
+    hide Jenny Neutral
+    show Jenny Yelling
+    j "Oh wow that’s so impressive!!"
+    you "{i}She thinks that project is impressive? Wow, it’s nice to know I'm not the only inexperienced one{\i}"
+    hide Jenny Yelling
+    show Jenny Sad Cry
+    j "I don't have any personal projects yet."
+    you "Oh really?"
+    you "When you signed up for the hackathon, were you scared about what others would say? Being less experienced and all…"
+    hide Jenny Sad Cry
+    show Jenny Yelling
+    j "No way!!"
+    hide Jenny Yelling
+    show Jenny Smiling
+    j "I joined so I could meet new people and learn new skills!"
+    you "Really? I was scared that I wouldn’t have the skills to contribute to the team. I thought I wasn’t good enough."
+    hide Jenny Smiling
+    show Jenny Neutral
+    j "It’s okay that you’re less experienced!! You’re here to have a new experience and try your best! "
+    j "No matter what happens, at least you’ll learn something new and meet new people!"
+    you "I guess you’re right… I just don’t want to hold my team back!"
+    hide Jenny Neutral
+    show Jenny Yelling
+    j "Oh stop that!! Nobody expects you to be incredible or anything!"
+    hide Jenny Yelling
+    show Jenny Smiling
+    you "Hmm … I guess you’re right, I shouldn’t feel scared because I'm less experienced. Everyone is at their own place, we’re all here to learn and better ourselves."
+    j "Absolutely!!"
+    hide Jenny Smiling
+    show Jenny Neutral
+    j "So you gonna show me that web straper? Sorry, web scraper?"
+    you "Yeah sure thing! It’s on my GitHub!"
+    hide Jenny Neutral
+    show Jenny confused
+    j "Git…? Hub…?"
+    you "Oh haha... Might have to show you that too then!" 
+    hide Jenny confused
+    show Jenny Smiling
+    j "I guess we have a lot to learn together!"
+    you "{i}I’m glad I reached out and connected with Jenny. Knowing that there are others with my level of experience is comforting.{\i} "
+    you "{i}Maybe I can help her in the same way that others can help me. {\i}"
+    hide Jenny Smiling
+
     python:
         jennyflag = True
     jump choicescreen

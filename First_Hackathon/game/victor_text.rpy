@@ -19,7 +19,7 @@ label victor_text:
     v "9 years. Currently in a masters of applied computing."
     hide Victor Chilling
     show Victor Serious
-    v "you’ve seen our project plan, right? I work best alone, so just focus on the front-end classes and I’ll take care of the rest. "
+    v "You’ve seen our project plan, right? I work best alone, so just focus on the front-end classes and I’ll take care of the rest. "
 
     you "{i}...What even is front-end again? Oh man, I’m so lost{\i}"
     you "Um, would you mind helping me understand inheritance? I know we’re using Java and I’m pretty new to object-oriented programming."
@@ -47,16 +47,16 @@ label victor_text:
     hide Victor Smiling
     show Victor Serious
     you "..."
-    v "you catch all that?"
+    v "You catch all that?"
     you "I … uh. I feel like I’m slowing you down. I’ll go learn on my own for now"
     hide Victor Serious
     show Victor Smiling
-    v "Ha, shoot. That’s just me being a bad teacher. I’m no good at explaining the basics. Let’s give it another go. I’ll do a better job this time."
+    v "Ha, shoot. That’s just me being a bad teacher. I’m no good at explaining the basics. Let me give it another go. I’ll do a better job this time."
     you "{i}I can't believe he still wants to help me?{\i}"
-    you "Are you sure? you don’t have to give me lessons if you don’t want to"
+    you "Are you sure? You don’t have to give me lessons if you don’t want to"
     hide Victor Smiling
     show Victor Talking
-    v "I want to. I remember when I was at your level, I struggled with more than just inheritance"
+    v "I'd like to. I remember when I was at your level, I struggled with more than just inheritance"
     you "Really? I can’t imagine you struggling given how much you know! "
     hide Victor Talking
     show Victor Smiling
@@ -81,7 +81,7 @@ label victor_text:
     show Victor Talking
     v "Agreed! Here, I’ll explain inheritance using Pokemon as an example. If we design a class for one Pokemon … "
     you "{i}Wow, Victor was cold at first, but turned into a great colleague.{\i}"
-    you "{i}Even when connecting feels difficult at first, it can be worthwhile to remain persistent and keep trying. Great things can come from it.{\i}"
+    you "{i}Even when connecting feels difficult at first, it can be worthwhile to remain persistent and keep trying. {\i}"
     hide Victor Talking
     python:
         victorflag = True
