@@ -6,7 +6,7 @@ image basic classroom=im.Scale("basic_classroom.png",1920,1080)
 image angie room=im.Scale("angie_scene.jpg",1920,1080)
 image jenny room="jenny_scene.jpg"
 image victor room="victor_scene.png"
-define v = Character("Victor", color='#065535')
+define v = Character("Victor", color='#2EFF3F')
 define scale = 1.5
 
 
@@ -19,7 +19,7 @@ image Victor Smiling = im.FactorScale("Victor_Smiling.png",scale)
 image Victor Suprised = im.FactorScale("Victor_Suprised.png",scale)
 image Victor Talking = im.FactorScale("Victor_Talking.png",scale)
 
-define j = Character("Jenny", color='#6da7e8')
+define j = Character("Jenny", color='#69EDFF')
 
 image Jenny Blushing Crying = im.FactorScale("Jenny_bluhsing_crying.png",scale)
 image Jenny Blushing = im.FactorScale("Jenny_Blushing.png",scale)

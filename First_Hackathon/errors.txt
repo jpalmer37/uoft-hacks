@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/jenny_text.rpy", line 22: expected statement.
-    you: "Oh nothing special, it’s just a program that grabs data from websites haha."
-       ^
+File "game/victor_text.rpy", line 1: expected statement.
+    bool 
+         ^
 
 Ren'Py Version: Ren'Py 7.4.2.1292
-Sat Feb 20 21:17:04 2021
+Sun Feb 21 00:31:54 2021
