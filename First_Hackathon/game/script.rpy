@@ -102,7 +102,7 @@ label start:
         show screen govictor
         show screen gojenny
         "You should talk to one of your teammates and get to know them better! Click the teammate you would like to talk to."
-
+        pause(10000000)
 
 label choicescreen:
     while True:
@@ -116,7 +116,7 @@ label choicescreen:
         if not victorflag:
             show screen govictor
         "You should talk to one of your teammates and get to know them better! Click the teammate you would like to talk to."
-
+        pause(10000000)
 
 label conclusion:
     show Jenny Smiling

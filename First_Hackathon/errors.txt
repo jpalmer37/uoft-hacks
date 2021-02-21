@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/jenny_text.rpy", line 22: expected statement.
-    you: "Oh nothing special, it’s just a program that grabs data from websites haha."
-       ^
+File "game/jenny_text.rpy", line 52: expected statement.
+    delay(0.5)
+              ^
 
 Ren'Py Version: Ren'Py 7.4.2.1292
-Sat Feb 20 21:17:04 2021
+Sat Feb 20 23:22:08 2021
